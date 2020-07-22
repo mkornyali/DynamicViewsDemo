@@ -7,3 +7,30 @@
 //
 
 import Foundation
+import UIKit
+enum ViewsEnum : CaseIterable {
+    
+    case label , textField , Button , Switch , datePicker , checkBox
+}
+
+
+extension ViewsEnum {
+    var dislayLabel : String {
+        switch self {
+            
+        case .label:
+            return "UILabel"
+        case .textField:
+            return "UITextField"
+        case .Button:
+            return "UIButton"
+        case .Switch:
+            return "UISwitch"
+        case .datePicker:
+            return "UIDatePicker"
+        case .checkBox:
+            return "UICheckBox"
+        }
+    }
+
+}
